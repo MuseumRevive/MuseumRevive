@@ -1,0 +1,1065 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+#container {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 7.5%;
+    width: 100%;
+    position: fixed;
+    border-bottom: 3px solid #53524A;
+    z-index: 1000;
+}
+
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 1%;
+    width: 100vw;
+}
+
+#logopicture {
+    width: 25%;
+}
+
+#container #logopicture img {
+    margin-top: 5px;
+}
+
+#logopicture img{
+    border-radius: 50%;
+    display: block;
+    height: 8vh;
+    margin: 8px auto;
+    margin-right: 30%;
+}
+
+#backhome {
+    font-size: 16px;
+    border: none;
+}
+
+#homepage a, #aboutus a{
+    display: block;
+    color: #53524A;
+    margin: 0px 120px 13px 100px;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#aboutus a {
+    margin: 0px 45px 13px 100px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #53524A;
+    padding: 10px 8px;
+    font-size: 16px;
+    border: none;
+    font-family: Georgia, serif;
+}
+
+.btn a {
+    color: #53524A;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content a {
+    background-color: 	#fff;
+    color: #53524A;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    display: block;
+    text-align: justify;
+    width: 250px;
+}
+
+.content a:hover {
+    color: blue;
+    background-color: 	#53524A;
+    color: #fff;
+}
+
+.dropdown:hover .content {
+    color: blue;
+    display: block;
+}
+
+.dropdown:hover .btn {
+    background-color: 	#fff;   
+    border-bottom: 3px solid black;
+}
+
+#backhome:hover, #aboutus2:hover {
+    background-color: 	#fff;
+    border-bottom: 3px solid black;
+}   
+
+.btn2 {
+    background-color: #fff;
+    color: #53524A;
+    padding: 10px 45px 0px 0px;
+    font-size: 16px;
+    border: none;
+    font-family: Georgia, serif;
+}
+
+.btn2 h5 {
+    color: #53524A;
+    text-decoration: none;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.content2 {
+    display: none;
+    position: absolute;
+    right: 25px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content2 h5 {
+    background-color: 	#fff;
+    color: #53524A;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    display: block;
+    text-align: justify;
+    width: 250px;
+}
+
+.content2 h5:hover {
+    color: blue;
+    background-color: 	#53524A;
+    color: #fff;
+}
+
+.dropdown2:hover .content2 {
+    color: blue;
+    display: block;
+}
+
+.dropdown2:hover .btn2 {
+    background-color: 	#fff;   
+    
+}
+
+/* ================================================================================================================= */
+
+#menu-bar i {
+    display: none;
+}
+
+#menu-bar i {
+    display: none;
+    font-size: 24px;
+    margin: 26px 40px 0px 0px;
+}
+
+#navigationv2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#exit i, .dropdown2v2{
+    color: white;
+    font-size: 38px;
+    margin: 15px;
+}
+
+.dropdown2v2 {
+    margin-top: 10px;
+}
+
+.btn2v2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.btn2v2 i {
+    font-size: 30px;
+}
+
+.btn2v2 h5 {
+    color: #53524A;
+    text-decoration: none;
+}
+
+.dropdown2v2 {
+    position: relative;
+    display: inline-block;
+}
+
+.content2v2 {
+    display: none;
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content2v2 h5 {
+    font-size: 20px;
+    background-color: 	#fff;
+    color: #53524A;
+    padding: 16px 22px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    display: block;
+    text-align: justify;
+    width: 100%;
+}
+
+
+
+#menu-bar2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logopicture2 {
+    height: 160px;
+    margin: 0px;
+}
+
+#logopicture2 img{
+    border-radius: 50%;
+    display: block;
+    height: 70%;
+    margin: 8px auto;
+}
+
+#homepagev2 {
+    width: 100%;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+#homepagev2 a, #aboutusv2 a, .dropdownv2 #museumnav {
+    font-size: 28px;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2.5%;
+    color: white;
+    
+}
+
+#homepagev2 a, .dropdownv2 #museumnav {
+    border-bottom: 3px solid white;
+}
+
+#aboutusv2 a {
+    border-top: 3px solid white;
+}
+
+#homepagev2 a {
+    margin-top: -10px;
+}
+
+.dropdownv2 {
+    margin: 0;
+    width: 100%;
+}
+
+.contentv2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentv2 a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-style: italic;
+}
+
+
+
+#home1::before {
+    background-image: url("Puntong Batangan background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+#home1 h1 {
+    padding-top: 8%;
+    color: white;
+    font-family: Circular, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#home1 h1 {
+    font-size: 66px;
+    color: white;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: block;
+    width: 20%;
+    padding-left: 63.5%;
+    padding-top: 13%;
+}
+
+#home1 h2 {
+    color: white;
+    font: 24px;
+    font-family: Helvetica, sans-serif;
+    
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    position: block;
+    width: 30%;
+    padding-left: 63.5%;
+    padding-top: 4%;
+}
+
+
+.Home {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.gallery-container {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #DFCCAF;
+}
+.wrapper {
+    max-width: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper h1 {
+    font-size: 60px;
+    font-family: Georgia, serif;
+    font-family: Druk, "Arial Black", "Arial Bold", sans-serif;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-style: normal;
+    color: white;
+    padding-bottom: 2%;
+    color: #53524A;
+}
+
+.wrapper i {
+    top: 44%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper #left {
+    margin-left: -25px;
+}
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child{
+    left: -22px;
+}
+
+.wrapper i:last-child{
+    right: -22px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    height: 60vh;
+    
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 95%;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #DFCCAF;
+}
+
+.carousel .card a{
+    height: 100%;
+}
+
+.carousel .card .img {
+    background: red;
+    height: 60%;
+    width: 100%;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card h2 {
+    font-family: Georgia, serif;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 0px 0 5px;
+    margin-top: 5px;
+}
+
+.carousel .card p {
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    height: 20%;
+    color: #6A6D78;
+    font-size: 20px;
+    padding: 10px 22px;
+    margin-bottom: -20px;
+    color:black;
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+
+.Home2 {
+    height: 95vh;
+    background-color: #070617;
+}
+
+#aboutus-logo {
+    padding-top: 2.5%;
+}
+
+#aboutus-logo img {
+    display: block;
+    height: 13vh;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#aboutus-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    height: 67%;
+    margin: 35px auto;
+    padding: 0.5%;
+    border-top: 3px solid #d9effb;
+    border-bottom: 3px solid #d9effb;
+}
+
+#aboutus-section #sec1 {
+    display: flex;
+    flex-direction: row;
+    position: block;
+}
+
+#aboutus-section1 {
+    width: 40%;
+    padding: 0.5%;
+}
+
+#aboutus-section1 h1 {
+    margin-top: 6%;
+    max-width: 400px;
+    font-size: 65px;
+    font-family: Georgia, serif;
+    font-family: Circular, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 65px;
+    color: white;
+}
+
+#aboutus-section1 h2{
+    
+    color: white;
+    font-size: 20px;
+    margin: 3.5% 2% 10%;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#aboutus-section2 {
+    color: white;
+    width: 60%;
+    padding: 0.5%;
+    padding-left: 3%;
+    padding-top: 0;
+}
+
+#aboutus-section2 #lists {
+    display: flex;
+}
+
+#aboutus-section2 #list1 {
+    padding: 0 25px;
+    padding-right: 10px;
+}
+
+#aboutus-section2 #list2 {
+    padding: 0 40px;
+    padding-right: 0;
+}
+
+#aboutus-section2 ul {
+    list-style: none;
+}
+
+#aboutus-section2 ul li {
+    max-width: 800px;
+    font-size: 18px;
+    margin: 18px 0px;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#aboutus-section #sec2 {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sec2 #icons {
+    width: 40%;
+    padding: 0.5%;
+    margin-top: 9%;
+}
+
+#icons a {
+    padding: 0.5%;
+    padding-left: 3%;
+    padding-right: 2%;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+#sec2 #other-museum {
+    width: 60%;
+}
+
+#others {
+    width: 87.5%;
+    margin-top: 11.5%;
+    margin-left: 2.5%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 3px solid #d9effb;
+}
+
+#others h2 {
+    font-size: 24px;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#others a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1900px){
+    #homepage a, #aboutus a{
+        margin: 0px 80px 13px 100px;
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding-bottom: 4px;
+        font-size: 13.5px;
+    }
+
+    .content {
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .content a {
+        font-size: 13px;
+        padding: 18px 22px;
+        width: 180px;
+    }
+
+    #homepage a, #aboutus a{
+        margin: 0px 60px 13px 50px;
+        padding: 10px 8px 4px;
+    }
+    
+    #aboutus a {
+        margin: 0px 45px 13px 50px;
+    }
+
+    .btn2 {
+        padding: 8px 35px 0px 0px;
+        font-size: 14px;
+    }
+
+    .content2 {
+        right: 25px;
+        min-width: 130px;
+    }
+    
+    .content2 h5 {
+        font-size: 10px;
+        padding: 14px 18px;
+        width: 200px;
+    }
+
+    #home1 h1 {
+        padding-top: 13.5%;
+        font-size: 52px;
+    }
+
+    #home1 h2 {
+        font-size: 18px;
+    }
+
+    .wrapper h1 {
+        font-size: 48px;
+    }
+
+    .carousel .card h2 {
+        font-size: 1.25rem;
+    }
+
+    .carousel .card p {
+        font-size: 16px;
+    }
+
+    #aboutus-section1 h1 {
+        margin-top: 8%;
+        font-size: 52px;
+    }
+
+    #aboutus-section1 h2 {
+        font-size: 16px;
+    }
+
+    #aboutus-section2 #lists {
+        padding-top: 1%;
+    }
+
+    #aboutus-section2 #list1 {
+        padding: 0 18px;
+        padding-right: 10px;
+    }
+    
+    #aboutus-section2 #list2 {
+        padding: 0 38px;
+        padding-right: 0;
+    }
+
+    #aboutus-section2 ul li {
+        font-size: 14px;
+    }
+
+    #sec2 #icons {
+        margin-top: 6.5%;
+    }
+
+    #icons a {
+        padding: 0.5%;
+        padding-left: 3%;
+        padding-right: 2%;
+        font-size: 21px;
+    }
+
+    #others {
+        margin-top: 8.5%;
+        margin-left: 2.5%;
+        padding: 20px;
+    }
+    
+
+    #others h2 {
+        font-size: 19px;
+        font-family: Circular, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    #container {
+        display: flex;
+        /* background-color: red; */
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1%;
+        width: 100%;
+    }
+
+    #container #logopicture img {
+        margin-top: 5px auto;
+    }
+
+    #logopicture {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logopicture img{
+        border-radius: 50%;
+        display: block;
+        height: 90%;
+        margin: 8px auto;
+        margin-left: 45%;
+    }
+
+    #navigationv2 {
+        display: none;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #menu-bar {
+        width: 10%;
+        margin: -5px 15px 0 0;
+        padding: 0;
+    }
+
+    #menu-bar i {
+        font-size: 32px;
+        display: flex;
+    }
+
+    #home1 {
+        margin-top: 20%;
+    }
+
+    #home1 h1 {
+        font-size: 52px;
+        width: 20%;
+        padding-left: 10%;
+        margin: 0;
+    }
+
+    #home1 h2 {
+        color: white;
+        font-size: 15px;
+        width: 90%;
+        margin-top: 100%;
+        margin-left: 5%;
+        padding: 5%;
+        line-height: 200%;
+    }
+
+    .wrapper h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .carousel {
+        height: 600px;
+    }
+
+    .wrapper i {
+        top: 40%
+    }
+
+    .Home2 {
+        height: 90vh;
+        background-color: #070617;
+    }
+
+    #aboutus-logo img {
+        height: 8vh;
+        margin-top: 2%;
+    }
+    
+
+    #aboutus-section {
+        margin: auto auto;
+        flex-direction: column;
+        max-width: 95%;
+        width: 95%;
+        padding: 0px;
+        margin-top: 2%;
+        height: 80%;
+    }
+
+    #aboutus-section #sec1 {
+        flex-direction: column;
+        
+    }
+
+    #aboutus-section1 {
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #aboutus-section1 h1 {
+        text-align: center;
+        margin-top: 2%;
+        margin: 0% auto;
+        padding: 0px;
+        width: 300px;
+        font-size: 26px;
+        color: white;
+    }
+
+    #aboutus-section1 h2{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        font-size: 15px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #aboutus-section2 {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        height:300px;
+    }
+
+    #aboutus-section2 ul li {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #aboutus-section #sec2 {
+        flex-direction: column;
+    }
+
+    #sec2 #icons {
+        height: 30%;
+        width: 100%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    #sec2 #other-museum {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #other-museum #others {
+        text-align: center;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    #others h2 {
+        font-size: 10px;
+        font-family: Circular, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 360px) {
+    #home1 {
+        margin-top: 15%;
+    }
+
+    #home1 h1 {
+        font-size: 52px;
+        padding-left: 10%;
+    }
+
+    #home1 h2 {
+        margin-top: 95%;
+        margin-left: 1%;
+        padding: 5%;
+    }
+
+    #other-museum #others {
+        margin-top: 5%;
+    }
+
+    #other-museum #others h2:nth-child(1){
+        padding-left: 5%;
+    }
+
+    #exit i, .dropdown2v2{
+        font-size: 35px;
+    }
+
+    .btn2v2 i {
+        font-size: 28px;
+    }
+
+    #logopicture2 {
+        height: 140px;
+    }
+
+    #homepagev2 a, #aboutusv2 a, .dropdownv2 #museumnav {
+        font-size: 24px;
+        padding: 2.5%;
+    }
+
+    #homepagev2 a {
+        margin-top: -20px;
+    }
+
+    .contentv2 a {
+        font-size: 18px;
+    }
+
+
+    
+
+}

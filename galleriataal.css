@@ -1,0 +1,1379 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+#container {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 7.5%;
+    width: 100%;
+    position: fixed;
+    border-bottom: 3px solid #53524A;
+    z-index: 1000;
+}
+
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 1%;
+    width: 100vw;
+}
+
+#logopicture {
+    width: 25%;
+
+}
+
+#container #logopicture img {
+    margin-top: 5px;
+}
+
+#logopicture img{
+    border-radius: 50%;
+    display: block;
+    height: 8vh;
+    margin: 8px auto;
+    margin-right: 30%;
+}
+
+#backhome {
+    font-size: 16px;
+    border: none;
+}
+
+#homepage a, #aboutus a{
+    display: block;
+    color: #53524A;
+    margin: 0px 120px 13px 100px;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#aboutus a {
+    margin: 0px 45px 13px 100px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #53524A;
+    padding: 10px 8px;
+    font-size: 16px;
+    border: none;
+    font-family: Georgia, serif;
+}
+
+.btn a {
+    color: #53524A;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content a {
+    background-color: 	#fff;
+    color: #53524A;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    display: block;
+    text-align: justify;
+    width: 250px;
+}
+
+.content a:hover {
+    color: blue;
+    background-color: 	#53524A;
+    color: #fff;
+}
+
+.dropdown:hover .content {
+    color: blue;
+    display: block;
+}
+
+.dropdown:hover .btn {
+    background-color: 	#fff;   
+    border-bottom: 3px solid black;
+}
+
+#backhome:hover, #aboutus2:hover {
+    background-color: 	#fff;
+    border-bottom: 3px solid black;
+}   
+
+.btn2 {
+    background-color: #fff;
+    color: #53524A;
+    padding: 10px 45px 0px 0px;
+    font-size: 16px;
+    border: none;
+    font-family: Georgia, serif;
+}
+
+.btn2 h5 {
+    color: #53524A;
+    text-decoration: none;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.content2 {
+    display: none;
+    position: absolute;
+    right: 25px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content2 h5 {
+    background-color: 	#fff;
+    color: #53524A;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    display: block;
+    text-align: justify;
+    width: 250px;
+}
+
+.content2 h5:hover {
+    color: blue;
+    background-color: 	#53524A;
+    color: #fff;
+}
+
+.dropdown2:hover .content2 {
+    color: blue;
+    display: block;
+}
+
+.dropdown2:hover .btn2 {
+    background-color: 	#fff;   
+    
+}
+
+
+/* ================================================================================================================= */
+
+#menu-bar i {
+    display: none;
+    font-size: 24px;
+    margin: 26px 40px 0px 0px;
+}
+
+#navigationv2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#exit i, .dropdown2v2{
+    color: white;
+    font-size: 50px;
+    margin: 15px;
+}
+
+.dropdown2v2 {
+    margin-top: 10px;
+}
+
+.btn2v2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.btn2v2 i {
+    font-size: 38px;
+}
+
+.btn2v2 h5 {
+    color: #53524A;
+    text-decoration: none;
+}
+
+.dropdown2v2 {
+    position: relative;
+    display: inline-block;
+}
+
+.content2v2 {
+    display: none;
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content2v2 h5 {
+    font-size: 20px;
+    background-color: 	#fff;
+    color: #53524A;
+    padding: 16px 22px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    display: block;
+    text-align: justify;
+    width: 100%;
+}
+
+
+
+#menu-bar2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logopicture2 {
+    height: 160px;
+    margin: 0px;
+}
+
+#logopicture2 img{
+    border-radius: 50%;
+    display: block;
+    height: 70%;
+    margin: 8px auto;
+}
+
+#homepagev2 {
+    width: 100%;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+#homepagev2 a, #aboutusv2 a, .dropdownv2 #museumnav {
+    font-size: 28px;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2.5%;
+    color: white;
+    
+}
+
+#homepagev2 a, .dropdownv2 #museumnav {
+    border-bottom: 3px solid white;
+}
+
+#aboutusv2 a {
+    border-top: 3px solid white;
+}
+
+#homepagev2 a {
+    margin-top: -10px;
+}
+
+.dropdownv2 {
+    margin: 0;
+    width: 100%;
+}
+
+.contentv2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentv2 a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-style: italic;
+}
+
+.Home {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home1::before {
+    background-image: url("Galleria Taal/Galleria Taal 6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg);
+    background-position-y: 68%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#home1 h1 {
+    padding-top: 8%;
+    color: white;
+    font-family: Circular, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    
+}
+
+#home1 h1 {
+    font-size: 66px;
+    color: white;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: block;
+    width: 20%;
+    padding-left: 5%;
+    padding-top:8%;
+    padding-bottom: 2%;
+}
+
+#home1 p {
+    color: white;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 180%;
+    position: block;
+    width: 35%;
+    padding-left: 7.5%;
+    padding-top: 2%;
+}
+
+#home1 p {
+    color: white;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 180%;
+    position: block;
+    width: 35%;
+    margin-left: 7.5%;
+    margin-top: 2%;
+    padding: 2%;
+    width: 700px;
+    height: 300px;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0,.4);
+}
+
+
+#transportation {
+    display: flex;
+    background-color: #F5F4EF;
+}
+
+#description {
+    width: 50%;
+}
+
+#description h1 {
+    color: #A2967F;
+    font-size: 60px;
+    font-family: Georgia, serif;
+    font-family: Druk, "Arial Black", "Arial Bold", sans-serif;
+    
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-style: normal;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-top: 10%;
+}
+
+#description p {
+    color: #53524A;
+    width: 75%;
+    font-size: 22px;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0% auto auto 20%;
+    padding: 1%;
+    line-height: 180%;
+}
+
+#descrip-pic {
+    margin: 8% auto auto auto;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    max-width: 600px;
+    height: 400px;
+}
+
+#descrip-pic img  {
+    display: block;
+    height: 400px;
+    width: 100%;
+    border-radius: 1%;
+    transition: transform 0.5s ease;
+    filter: grayscale(80%);
+}
+
+#descrip-pic:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+
+#location {
+    display: flex;
+    background-image: url("Galleria Taal/Galleria Taal 7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+
+#map {
+    margin: 10% auto auto 5%;
+    padding: 20px;
+}
+
+#map iframe {
+    display: block;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+
+#located {
+    width: 55%;
+}
+
+#located h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, serif;
+    font-family: Druk, "Arial Black", "Arial Bold", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-style: normal;
+    padding-bottom: 2%;
+    padding-top: 10%;
+}
+
+#located h2 {
+    color: white;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 180%;
+    position: block;
+    padding-left: 0%;
+    padding-top: 17%;
+}
+
+
+#virtualtour {
+    background-color: #F5F4EF;
+}
+
+#virtualtour #frame {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99.5%;
+    width: 80%;
+    border-bottom: 3px solid black;
+}
+
+#virtualtour iframe {
+    border-radius: 2%;
+}
+
+
+#activities {
+    background-color: #F5F4EF;
+}
+
+#activities h1 {
+    font-size: 60px;
+    color: #53524A;
+    font-family: Druk, "Arial Black", "Arial Bold", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: block;
+    width: 20%;
+    padding-left: 2%;
+    padding-top: 2.5%;
+}
+
+#activities h2 {
+    font-size: 22px;
+    font-family: Circular, Helvetica, sans-serif;
+    color: #070617;
+    font-weight: 400;
+    position: block;
+    padding-left: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+}
+
+#activities h3 {
+    font-size: 22px;
+    font-family: Circular, Helvetica, sans-serif;
+    color: #070617;
+    font-weight: 400;
+    position: block;
+    margin-top: 13%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#act-frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.5%;
+}
+
+#act-list {
+    align-items: center;
+    padding-left: 8%;
+    line-height: 180%;
+    font-size: 16px;
+    font-family: Circular, Helvetica, sans-serif;
+    color: #070617;
+    font-weight: 400;
+}
+
+#act-list p {
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+
+
+.Home2 {
+    height: 95vh;
+    background-color: #070617;
+}
+
+#aboutus-logo {
+    padding-top: 2.5%;
+}
+
+#aboutus-logo img {
+    display: block;
+    height: 13vh;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#aboutus-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    height: 67%;
+    margin: 35px auto;
+    padding: 0.5%;
+    border-top: 3px solid #d9effb;
+    border-bottom: 3px solid #d9effb;
+}
+
+#aboutus-section #sec1 {
+    display: flex;
+    flex-direction: row;
+    position: block;
+}
+
+#aboutus-section1 {
+    width: 40%;
+    padding: 0.5%;
+}
+
+#aboutus-section1 h1 {
+    margin-top: 6%;
+    max-width: 400px;
+    font-size: 65px;
+    font-family: Georgia, serif;
+    font-family: Circular, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+#aboutus-section1, h1{
+    font-size: 25px;
+    color: white;
+}
+
+#aboutus-section1 h2{
+    
+    color: white;
+    font-size: 20px;
+    margin: 3.5% 2% 10%;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#aboutus-section2 {
+    color: white;
+    width: 60%;
+    padding: 0.5%;
+    padding-left: 3%;
+    padding-top: 0;
+}
+
+#aboutus-section2 #lists {
+    display: flex;
+}
+
+#aboutus-section2 #list1 {
+    padding: 0 25px;
+    padding-right: 10px;
+}
+
+#aboutus-section2 #list2 {
+    padding: 0 40px;
+    padding-right: 0;
+}
+
+#aboutus-section2 ul {
+    list-style: none;
+}
+
+#aboutus-section2 ul li {
+    max-width: 800px;
+    font-size: 18px;
+    margin: 18px 0px;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#aboutus-section #sec2 {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sec2 #icons {
+    width: 40%;
+    padding: 0.5%;
+    margin-top: 9%;
+}
+
+#icons a {
+    padding: 0.5%;
+    padding-left: 3%;
+    padding-right: 2%;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+#sec2 #other-museum {
+    width: 60%;
+}
+
+#others {
+    width: 87.5%;
+    margin-top: 11.5%;
+    margin-left: 2.5%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 3px solid #d9effb;
+}
+
+#others h2 {
+    font-size: 24px;
+    font-family: Circular, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#others a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1900px){
+    #homepage a, #aboutus a{
+        margin: 0px 80px 13px 100px;
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding-bottom: 4px;
+        font-size: 13.5px;
+    }
+
+    .content {
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .content a {
+        font-size: 13px;
+        padding: 18px 22px;
+        width: 180px;
+    }
+
+    #homepage a, #aboutus a{
+        margin: 0px 60px 13px 50px;
+        padding: 10px 8px 4px;
+    }
+    
+    #aboutus a {
+        margin: 0px 45px 13px 50px;
+    }
+
+    .btn2 {
+        padding: 8px 35px 0px 0px;
+        font-size: 14px;
+    }
+
+    .content2 {
+        right: 25px;
+        min-width: 130px;
+    }
+    
+    .content2 h5 {
+        font-size: 10px;
+        padding: 14px 18px;
+        width: 200px;
+    }
+
+    #home1 h1 {
+        padding-top: 8%;
+        font-size: 52px;
+    }
+
+    #home1 p {
+        width: 37%;
+        height: 240px;
+        font-size: 18px;
+    }
+
+    #description h1 {
+        font-size: 48px;
+    }
+
+    #description p {
+        margin: 9.4% auto auto 25%;
+        font-size: 17.5px;
+    }
+
+    #descrip-pic {
+        margin: 7.5% auto auto auto;
+        padding: 20px;
+        width: 480px;
+        max-width: 600px;
+        height: 300px;
+    }
+
+    #descrip-pic img  {
+        object-position: 10% 20%;
+    }
+
+    #map {
+        margin: 10% auto auto 4.65%;
+        padding: 20px;
+    }
+
+    #map iframe {
+        width: 520px;
+        height: 470px;
+    }
+
+    #located h1 {
+        font-size: 48px;
+    }
+
+    #located h2 {
+        font-size: 18px;
+    }
+
+    #virtualtour iframe {
+        width: 866px;
+        height: 580px;
+    }
+
+    #activities h1 {
+        font-size: 48px;
+    }
+
+    #activities h2 {
+        font-size: 17.6px;
+    }
+
+    #activities h3 {
+        font-size: 17.6px;
+    }
+
+    #act-list {
+        font-size: 12.8px;
+    }
+
+    #aboutus-section1 h1 {
+        margin-top: 8%;
+        font-size: 52px;
+    }
+
+    #aboutus-section1 h2 {
+        font-size: 16px;
+    }
+
+    #aboutus-section2 #lists {
+        padding-top: 1%;
+    }
+
+    #aboutus-section2 #list1 {
+        padding: 0 18px;
+        padding-right: 10px;
+    }
+    
+    #aboutus-section2 #list2 {
+        padding: 0 38px;
+        padding-right: 0;
+    }
+
+    #aboutus-section2 ul li {
+        font-size: 14px;
+    }
+
+    #sec2 #icons {
+        margin-top: 6.5%;
+    }
+
+    #icons a {
+        padding: 0.5%;
+        padding-left: 3%;
+        padding-right: 2%;
+        font-size: 21px;
+    }
+
+    #others {
+        margin-top: 8.5%;
+        margin-left: 2.5%;
+        padding: 20px;
+    }
+    
+
+    #others h2 {
+        font-size: 19px;
+        font-family: Circular, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    #container {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1%;
+        width: 100%;
+    }
+
+    #container #logopicture img {
+        margin-top: 5px auto;
+    }
+
+    #logopicture {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logopicture img{
+        border-radius: 50%;
+        display: block;
+        height: 90%;
+        margin: 8px auto;
+        margin-left: 45%;
+    }
+
+    #navigationv2 {
+        display: none;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #menu-bar {
+        width: 10%;
+        margin: -5px 15px 0 0;
+        padding: 0;
+    }
+
+    #menu-bar i {
+        font-size: 32px;
+        display: flex;
+    }
+
+
+    .Home2 {
+        height: 90vh;
+        background-color: #070617;
+    }
+
+    #aboutus-logo img {
+        height: 8vh;
+        margin-top: 2%;
+    }
+    
+
+    #aboutus-section {
+        margin: auto auto;
+        flex-direction: column;
+        max-width: 95%;
+        width: 95%;
+        padding: 0px;
+        margin-top: 2%;
+        height: 80%;
+    }
+
+    #aboutus-section #sec1 {
+        flex-direction: column;
+        
+    }
+
+    #aboutus-section1 {
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #aboutus-section1 h1 {
+        text-align: center;
+        margin-top: 2%;
+        margin: 0% auto;
+        padding: 0px;
+        width: 300px;
+        font-size: 26px;
+        color: white;
+    }
+
+    #aboutus-section1 h2{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        font-size: 15px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #aboutus-section2 {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        height:300px;
+    }
+
+    #aboutus-section2 ul li {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #aboutus-section #sec2 {
+        flex-direction: column;
+    }
+
+    #sec2 #icons {
+        height: 30%;
+        width: 100%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    #sec2 #other-museum {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #other-museum #others {
+        text-align: center;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    #others h2 {
+        font-size: 10px;
+        font-family: Circular, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    #home1::before {
+        background-position-x: 80%;
+    }
+
+
+    #home1 {
+        height: 100vh;
+        margin-top: 20%;
+    }
+
+
+    #home1 h1 {
+        font-size: 44px;
+        width: 20%;
+        padding-left: 10%;
+        padding-top: 5%;
+        margin: 0;
+    }
+
+    #home1 p {
+        line-height: 150%;
+        position: block;
+        margin-left: 0%;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 5%;
+        width: 80%;
+        height: 440px;
+    }
+
+
+    #transportation {
+        flex-direction: column;
+    }
+
+    #description {
+        width: 100%;
+    }
+
+    #description h1 {
+        font-size: 34px;
+        padding-bottom: 2%;
+        padding-top: 10%;
+    }
+
+    #description p {
+        width: 80%;
+        font-size: 11.5px;
+        margin: 0px;
+        padding: 0px;
+        margin: 5%;
+        padding: 5%;
+        line-height: 180%;
+        margin-top: 1%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #description #nd {
+        margin-top: -5%;
+        padding-top: 0%;
+        padding-bottom: 2%;
+    }
+
+    #descrip-pic {
+        width: 340px;
+        max-width: 600px;
+        height: 300px;
+
+        margin: 20px;
+        padding: 0px;
+        margin-top: -20px;
+    }
+    
+    #descrip-pic img  {
+        height: 300px;
+        width: 100%;
+    }
+
+    #location {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    
+    #map {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 120px;
+    }
+    
+    #map iframe {
+        padding: 0px;
+        width: 350px;
+        height: 450px;
+        margin: auto;
+    }
+    
+    
+    #located {
+        width: 100%;
+        margin-bottom: 50px;
+        
+    }
+    
+    #located h1 {
+        text-align: center;
+        font-size: 34px;
+        padding-bottom: 2%;
+        padding-top: 10%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+    
+    #located h2 {
+        width: 80%;
+        font-size: 14px;
+        padding-left: 0%;
+        padding-top: 17%;
+        padding-left: 0%;
+        padding-top: 10%;
+        margin-left: 5%;
+    }
+
+
+    #activities h1 {
+        text-align: center;
+        font-size: 34px;
+        width: 100%;
+        padding-top: 2.5%;
+        margin: 0px;
+        margin-left: -20px;
+    }
+    
+    #activities h2 {
+        width: 100%;
+        font-size: 14px;
+        padding-left: 1%;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        margin: 0%;
+    }
+    
+    #activities h3 {
+        font-size: 14px;
+        font-family: Circular, Helvetica, sans-serif;
+        color: #070617;
+        font-weight: 400;
+        position: block;
+        margin-top: 8%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #act-frame {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2.5%;
+    }
+    
+    #act-list {
+        align-items: center;
+        padding-left: 2%;
+        line-height: 180%;
+        font-size: 15px;
+        font-family: Circular, Helvetica, sans-serif;
+        color: #070617;
+        font-weight: 400;
+    }
+    
+    #act-list p {
+        font-size: 13px;
+        margin-left: 2%;
+        margin-bottom: 1%;
+        line-height: 140%;
+    }
+
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 360px) {
+    #home1 h1 {
+        font-size: 40px;
+    }
+
+    #home1 p {
+        font-size: 17px;
+        height: 400px;
+    }
+
+    #descrip-pic {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    #descrip-pic img {
+        height: 360px;
+    }
+    
+    #map {
+        margin-bottom: 90px;
+    }
+    
+    #map iframe {
+        width: 315px;
+        height: 410px;
+        margin: auto;
+    }
+    
+    
+
+    #located {
+        width: 100%;
+        margin-bottom: 50px;
+        
+    }
+    
+    #located h1 {
+        text-align: center;
+        font-size: 34px;
+        padding-bottom: 2%;
+        padding-top: 10%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+    
+    #located h2 {
+        width: 80%;
+        font-size: 14px;
+        padding-left: 0%;
+        padding-top: 17%;
+        padding-left: 0%;
+        padding-top: 10%;
+        margin-left: 5%;
+    }
+    
+    #virtualtour iframe {
+        height: 70%;
+    }
+
+
+    #activities h1 {
+        font-size: 34px;
+    }
+    
+    #activities h2 {
+        font-size: 13px;
+    }
+    
+    #activities h3 {
+        font-size: 13px;
+    }
+
+    
+    #act-list p {
+        font-size: 11px;
+    }
+
+    #sec2 #other-museum{
+        margin-top: 4%;
+    }
+
+
+    #other-museum #others h2:nth-child(1){
+        padding-left: 5%;
+    }
+
+    #exit i, .dropdown2v2{
+        font-size: 35px;
+    }
+
+    .btn2v2 i {
+        font-size: 28px;
+    }
+
+    #logopicture2 {
+        height: 140px;
+    }
+
+    #homepagev2 a, #aboutusv2 a, .dropdownv2 #museumnav {
+        font-size: 24px;
+        padding: 2.5%;
+    }
+
+    #homepagev2 a {
+        margin-top: -20px;
+    }
+
+    .contentv2 a {
+        font-size: 18px;
+    }
+
+}

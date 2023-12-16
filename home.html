@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Museum Revive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "home.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    <div id = "container">
+        <div id = "logopicture">
+            <img src="logo3.jpg" alt="logo">
+        </div>
+        <div id = "navigation">
+            <div id = "homepage">
+                <a href = "#" id = "backhome">home</a>  
+            </div>
+            <div class="dropdown">
+                <button class="btn">MUSEUMS</button>
+                <div class="content">
+                    <a href="puntongbatangan.html">Puntong Batangan</a>
+                    <a href="museongbatangas.html">Museo ng Batangas</a>
+                    <a href="malvarshrine.html">Malvar Shrine</a>
+                    <a href="galleriataal.html">Galleria Taal</a>
+                    <a href="apaciblemuseum.html">Apacible Museum</a>
+                    <a href="mabinishrine.html">Mabini Shrine</a>
+                </div>
+            </div>
+            <div id = "aboutus">
+                <a href = "#aboutus-section" id = "aboutus2">about us</a>
+            </div>
+            <div class="dropdown2">
+                <button class="btn2"><i class="fas fa-bell"></i></button>
+                <div class="content2">
+                    <h5>No Announcement</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id = "menu-bar">
+            <i class="fas fa-bars" onclick=showvar()></i>
+        </div>
+
+        <div id = "navigationv2">
+            <div id = "menu-bar2">
+                <div id = "exit">
+                    <i class="fas fa-times" onclick=exitvar()></i>
+                </div>
+                <div class="dropdown2v2">
+                    <button class="btn2v2" onclick=shownotif()><i class="fas fa-bell"></i></button>
+                    <div  class="content2v2">
+                        <h5>No Announcement</h5>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function shownotif() {
+                    const notif = document.querySelector('.content2v2')
+                    notif.style.display = (notif.style.display === 'none' || notif.style.display === '') ? 'block' : 'none';
+                }
+
+                function showvar() {
+                    const showmenu = document.querySelector('#navigationv2')
+                    showmenu.style.display = (showmenu.style.display === 'none' || showmenu.style.display === '') ? 'block' : 'none';
+                }
+
+                function exitvar() {
+                    const exitmenu = document.querySelector('#navigationv2')
+                    exitmenu.style.display = (exitmenu.style.display === 'none' || exitmenu.style.display === '') ? 'block' : 'none';
+                }
+
+
+                
+            </script>
+            
+            <div id = "logopicture2">
+                <img src="logo3.jpg" alt="logo">
+            </div>
+            <div id = "homepagev2">
+                <a href = "home.html" id = "backhomev2">home</a>  
+            </div>
+            <div class="dropdownv2">
+                <a href = "#museumnav" id = "museumnav">Museums</a>  
+                <div class="contentv2">
+                    <a href="puntongbatangan.html">Puntong Batangan</a>
+                    <a href="museongbatangas.html">Museo ng Batangas</a>
+                    <a href="malvarshrine.html">Malvar Shrine</a>
+                    <a href="galleriataal.html">Galleria Taal</a>
+                    <a href="apaciblemuseum.html">Apacible Museum</a>
+                    <a href="mabinishrine.html">Mabini Shrine</a>
+                </div>
+            </div>
+            <div id = "aboutusv2">
+                <a href = "#aboutus-section2" id = "aboutus2v2">about us</a>
+            </div>
+        </div>
+    </div>
+
+    <div id = "home1" class = "Home">
+        <h1>Museum Revive</h1>
+        <h2>"Ala eh! Revive the Past, Relive the Stories: <br> Ala eh Museum - Where History Finds its Voice."</h2>
+    </div>
+
+    <div class = "gallery-container Home">
+        <div class="wrapper">
+            <h1>Museums</h1>
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><a href="puntongbatangan.html" target=""><img src="Puntong batangan\Puntong batangan 1.jpg" alt="img" draggable="false"></a></div>
+                    <h2>Puntong Batangan</h2>
+                    <p>Puntong Batangan Museum in Batangas showcases the rich cultural heritage of the Batangueños.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><a href="museongbatangas.html" target=""><img src="Museo ng batangas\Museo ng batangas 1.jpg" alt="img" draggable="false"></a></div>
+                    <h2>Museo ng Batangas</h2>
+                    <p>The Museo ng Batangas, located in Batangas City, Philippines, showcases the rich cultural heritage and history of the province.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><a href="malvarshrine.html" target=""><img src="Malvar Shrine\Malvar Shrine 5.jpg" alt="img" draggable="false"></a></div>
+                    <h2>Malval Shrine</h2>
+                    <p>The Malvar Shrine is located in Santo Tomas, Batangas, Philippines, and serves as a memorial to General Miguel Malvar, a prominent figure in the Philippine Revolution and the Philippine-American War.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><a href="galleriataal.html" target=""><img src="Galleria Taal\Galleria Taal 5.jpg" alt="img" draggable="false"></a></div>
+                    <h2>Galleria Taal</h2>
+                    <p>Galleria Taal Museum, also situated in Taal, Batangas, Philippines, is a specialized museum dedicated to vintage cameras and photography.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><a href="apaciblemuseum.html" target=""><img src="Apacible Museum\Apacible Museum 4.JPG" alt="img" draggable="false"></a></div>
+                    <h2>Apacible Museum</h2>
+                    <p>The Apacible Museum, located in Taal, Batangas, Philippines, is a heritage house turned museum that preserves the rich history and culture of the Apacible family.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><a href="mabinishrine.html" target=""><img src="Mabini shrine\Mabini shrine 1.jpg" alt="img" draggable="false"></a></div>
+                    <h2>Mabini Shrine</h2>
+                    <p>The Mabini Shrine is a historical site in Tanauan, Batangas, Philippines, dedicated to Apolinario Mabini, a key figure in the Philippine Revolution and the first Prime Minister of the Philippines.</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+    </div>
+    
+
+    <div class = "Home2">
+        <div id = "aboutus-logo">
+            <img src= "logo3.jpg" alt="logo">
+        </div>
+
+        <div id = "aboutus-section">
+            <div id = "sec1">
+                <div id = "aboutus-section1">
+                    <h1>Museum Revive</h1>
+                    <h2>"Ala eh! Revive the Past, Relive the Stories: <br> Ala eh Museum - Where History Finds its Voice."</h2>
+                </div>
+                <div id = "aboutus-section2">
+                    <div id = "lists">
+                        <ul id = "list1">
+                            <li>Puntong Batangan: </li>
+                            <li>Museo ng Batangas: </li>
+                            <li>Malvar Shrine: </li>
+                            <li>Galleria Taal: </li>
+                            <li>Apacible Museum: </li>
+                            <li>Mabini Shrine: </li>
+                        </ul>
+                        <ul id = "list2">
+                            <li>P. Burgos Street, Brgy. Poblacion 17 Batangas City, Batangas Philippines 4200</li>
+                            <li>Batangas City, 4200, Batangas</li>
+                            <li>Malvar City of Sto. Tomas, Batangas</li>
+                            <li>#60 Agoncillo St. Pob. 4, Taal, Batangas                    </li>
+                            <li>Calle M.M. Agoncillo, Poblacion Zone 04, Taal Batangas</li>
+                            <li>Mabine Ave, Tanauan, Batangas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id = "sec2">
+                <div id = "icons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=museumrevive@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href = "https://www.facebook.com/profile.php?id=61554227274419&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div id = "other-museum">
+                    <div id = "others">
+                        <h2><a href="puntongbatangan.html" target="">Puntong Batangan</a></h2>
+                        <h2><a href="museongbatangas.html" target="">Museo ng Batangas</a></h2>
+                        <h2><a href="malvarshrine.html" target="">Malvar Shrine</a></h2>
+                        <h2><a href="galleriataal.html" target="">Galleria Taal</a></h2>
+                        <h2><a href="apaciblemuseum.html" target="">Apacible Museum</a></h2>
+                        <h2><a href="mabinishrine.html" target="">Mabini Shrine</a></h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
