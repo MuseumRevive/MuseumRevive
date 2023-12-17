@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Puntong Batangan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "puntongbatangan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    <div id = "container">
+        <div id = "logopicture">
+            <img src="logo3.jpg" alt="logo">
+        </div>
+        <div id = "navigation">
+            <div id = "homepage">
+                <a href = "index.html" id = "backhome">home</a>  
+            </div>
+            <div class="dropdown">
+                <button class="btn">MUSEUMS</button>
+                <div class="content">
+                    <a href="#">Puntong Batangan</a>
+                    <a href="museongbatangas.html">Museo ng Batangas</a>
+                    <a href="malvarshrine.html">Malvar Shrine</a>
+                    <a href="galleriataal.html">Galleria Taal</a>
+                    <a href="apaciblemuseum.html">Apacible Museum</a>
+                    <a href="mabinishrine.html">Mabini Shrine</a>
+                </div>
+            </div>
+            <div id = "aboutus">
+                <a href = "#aboutus-section" id = "aboutus2">about us</a>
+            </div>
+            <div class="dropdown2">
+                <button class="btn2"><i class="fas fa-bell"></i></button>
+                <div class="content2">
+                    <h5>No Announcement</h5>
+                </div>
+            </div>
+        </div>
+    
+
+        <div id = "menu-bar">
+            <i class="fas fa-bars" onclick=showvar()></i>
+        </div>
+
+        <div id = "navigationv2">
+            <div id = "menu-bar2">
+                <div id = "exit">
+                    <i class="fas fa-times" onclick=exitvar()></i>
+                </div>
+                <div class="dropdown2v2">
+                    <button class="btn2v2" onclick=shownotif()><i class="fas fa-bell"></i></button>
+                    <div  class="content2v2">
+                        <h5>No Announcement</h5>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function shownotif() {
+                    const notif = document.querySelector('.content2v2')
+                    notif.style.display = (notif.style.display === 'none' || notif.style.display === '') ? 'block' : 'none';
+                }
+
+                function showvar() {
+                    const showmenu = document.querySelector('#navigationv2')
+                    showmenu.style.display = (showmenu.style.display === 'none' || showmenu.style.display === '') ? 'block' : 'none';
+                }
+
+                function exitvar() {
+                    const exitmenu = document.querySelector('#navigationv2')
+                    exitmenu.style.display = (exitmenu.style.display === 'none' || exitmenu.style.display === '') ? 'block' : 'none';
+                }
+
+
+                
+            </script>
+            
+            <div id = "logopicture2">
+                <img src="logo3.jpg" alt="logo">
+            </div>
+            <div id = "homepagev2">
+                <a href = "index.html" id = "backhomev2">home</a>  
+            </div>
+            <div class="dropdownv2">
+                <a href = "#museumnav" id = "museumnav">Museums</a>  
+                <div class="contentv2">
+                    <a href="puntongbatangan.html">Puntong Batangan</a>
+                    <a href="museongbatangas.html">Museo ng Batangas</a>
+                    <a href="malvarshrine.html">Malvar Shrine</a>
+                    <a href="galleriataal.html">Galleria Taal</a>
+                    <a href="apaciblemuseum.html">Apacible Museum</a>
+                    <a href="mabinishrine.html">Mabini Shrine</a>
+                </div>
+            </div>
+            <div id = "aboutusv2">
+                <a href = "#aboutus-section2" id = "aboutus2v2">about us</a>
+            </div>
+        </div>
+    </div>
+
+
+        <div id = "home1" class = "Home">
+            <h1>Puntong Batangan</h1>
+            <p>Puntong Batangan Museum in Batangas showcases the rich cultural heritage of the Batangueños. It features exhibits on local history, traditions, and artifacts, providing visitors with insights into the province's past and cultural identity. The museum serves as a cultural hub, preserving and celebrating Batangas' unique heritage.</h2>
+        </div>
+
+        <div class = "Home" id ="transportation">
+            <div id = "description">
+                <h1>Transportation</h1>
+                <p>Board a bus heading to Batangas City from terminals like Buendia or Cubao in Manila. Disembark at Batangas City Grand Terminal. Take a jeepney with a route going to Brgy. Poblacion 17 or ask for one that passes by P. Burgos Street. From the drop-off point in Brgy. Poblacion 17 or near P. Burgos Street, hire a tricycle to reach Puntong Batangan Museum.</p>
+            </div>
+            <div id = "descrip-pic">
+                <img src = "Puntong batangan\Puntong batangan 2.JPG" alt = "transpo">
+            </div>
+        </div>
+    </div>
+
+    <div id = "location" class = "Home">
+        <div id = "map">
+            <iframe
+                width="650"
+                height="600"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3967182780602!2d121.05583707590992!3d13.75493329721936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd051b9f499e75%3A0x8fa540ea2aa2792b!2sMuseo%20Puntong%20Batangan%20(City%20Museum%20of%20Batangas)!5e0!3m2!1sen!2sph!4v1702541637754!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+            ></iframe>
+    </div>
+        <div id = "located">
+            <h1>Location</h1>
+            <h2>P. Burgos Street, Brgy. Poblacion 17 Batangas City, Batangas Philippines 4200</h2>
+        </div>
+    </div>
+
+    <div id = "virtualtour" class = "Home">
+        <div id = "frame">
+            <iframe 
+                width="1080" 
+                height="720" 
+                src="https://www.youtube.com/embed/AMVxu_dM_mE?si=lVkMialKRKJwATS8" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div id = "activities" class = "Home">
+        <div id = "act-frame">
+            <h1>Activities</h1>
+            <h2>At Puntong Batangan Museum, you can enjoy a range of activities and experiences:</h2>
+            <div id = "act-list">
+                <h4>Explore Exhibits:</h4>
+                <p>Take your time exploring the museum's exhibits that showcase the history, culture, and heritage of Puntong Batangan.</p>
+                <h4>Attend Workshops:</h4>
+                <p>Check if there are any workshops or interactive sessions offered, providing hands-on experiences related to local crafts or traditions.</p>
+                <h4>Guided Tours:</h4>
+                <p>Consider joining a guided tour to gain a deeper understanding of the artifacts and displays within the museum.</p>
+                <h4>Photography:</h4>
+                <p>Capture memorable moments by taking photographs of the interesting exhibits and displays.</p>
+                <h4>Learn Local History:</h4>
+                <p>Immerse yourself in the history of Puntong Batangan through the stories and artifacts presented in the museum.</p>
+                <h4>Attend Events:</h4>
+                <p>Inquire about any special events or exhibitions happening at the museum during your visit.</p>
+                <h4>Support Local Artists:</h4>
+                <p>If the museum features a section on local art, appreciate and support the work of local artists.</p>
+            </div>
+            <h3>Remember to check the museum's schedule and any additional offerings to make the most of your visit.</p>
+        </div>
+    </div>
+
+
+    <div class = "Home2">
+        <div id = "aboutus-logo">
+            <img src= "logo3.jpg" alt="logo">
+        </div>
+
+        <div id = "aboutus-section">
+            <div id = "sec1">
+                <div id = "aboutus-section1">
+                    <h1>Museum Revive</h1>
+                    <h2>"Ala eh! Revive the Past, Relive the Stories: <br> Ala eh Museum - Where History Finds its Voice."</h2>
+                </div>
+                <div id = "aboutus-section2">
+                    <div id = "lists">
+                        <ul id = "list1">
+                            <li>Puntong Batangan: </li>
+                            <li>Museo ng Batangas: </li>
+                            <li>Malvar Shrine: </li>
+                            <li>Galleria Taal: </li>
+                            <li>Apacible Museum: </li>
+                            <li>Mabini Shrine: </li>
+                        </ul>
+                        <ul id = "list2">
+                            <li>P. Burgos Street, Brgy. Poblacion 17 Batangas City, Batangas Philippines 4200</li>
+                            <li>Batangas City, 4200, Batangas</li>
+                            <li>Malvar City of Sto. Tomas, Batangas</li>
+                            <li>#60 Agoncillo St. Pob. 4, Taal, Batangas                    </li>
+                            <li>Calle M.M. Agoncillo, Poblacion Zone 04, Taal Batangas</li>
+                            <li>Mabini Ave, Tanauan, Batangas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id = "sec2">
+                <div id = "icons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=museumrevive@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href = "https://www.facebook.com/profile.php?id=61554227274419&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div id = "other-museum">
+                    <div id = "others">
+                        <h2><a href="puntongbatangan.html" target="">Puntong Batangan</a></h2>
+                        <h2><a href="museongbatangas.html" target="">Museo ng Batangas</a></h2>
+                        <h2><a href="malvarshrine.html" target="">Malvar Shrine</a></h2>
+                        <h2><a href="galleriataal.html" target="">Galleria Taal</a></h2>
+                        <h2><a href="apaciblemuseum.html" target="">Apacible Museum</a></h2>
+                        <h2><a href="mabinishrine.html" target="">Mabini Shrine</a></h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
